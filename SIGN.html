@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://thumbs.dreamstime.com/z/nature-background-bright-light-beautiful-soft-color-blur-nature-background-bright-light-beautiful-soft-color-blur-flowers-123822308.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, orange, purple, aqua);
+            border: 2px solid blueviolet;
+        }
+
+        ul {
+            display: flex;
+            width: 400px;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+
+        .form111 {
+            box-shadow: 0 0 10px black;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .form111 input {
+            width: 100%;
+            height: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        li:hover{
+            border: 2px solid blueviolet;
+
+        }
+        form:focus{
+           outline: none;
+        }
+        h1:hover{
+            border: 2px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> WELCOME TO SIGN IN PAGE</h1>
+        <form>
+            <label for="search.box">SEARCH BOX</label>
+            <input type="text" name="search box" id="search.box">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+        <nav>
+            <ul>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <li><a href="./HOME123.html">home</a></li>
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <li><a href="#">signin</a></li>
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <li><a href="./service.html">feedback</a></li>
+                <i class="fa fa-info" aria-hidden="true"></i>
+                <li><a href="./ABOUT.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <fieldset>
+        <legend>
+            SIGN IN FORM
+        </legend>
+        <div class="form111">
+            <form>
+                <label for="F.NAME">FIRST NAME</label>
+                <input type="text" name="FIRST NAME" id="F.NAME" placeholder="FIRST NAME">
+                <br>
+                <label for="L.NAME">LAST NAME</label>
+                <input type="text" name="LAST NAME" id="L.NAME" placeholder="LAST NAME">
+                <br>
+                <label for="E.MAIL">EMAIL</label>
+                <input type="email" name="EMAIL" id="E.MAIL" placeholder="MAIL ID">
+                <br>
+                <label for="PASS.WORD">PASS WORD</label>
+                <input type="text" name="PASS WORD" id="PASS.WORD" placeholder="PASSWORD">
+                <br>
+                <label for="PHONE.NUMBER">PHONE NUMBER</label>
+                <input type="tel" name="PHONE NUMBER" id="PHONE.NUMBER" placeholder="PHONE NUMBER">
+                <br>
+                <label>GENDER</label>
+                <input type="radio" name="GENDER"> male
+                <input type="radio" name="GENDER"> Female
+                <input type="radio" name="GENDER"> others
+                <br>
+                <label>TERMS AND CONDITIONS</label>
+                <input type="checkbox" name="terms and conditions">
+                <br>
+                <input type="submit" name="submit">
+        </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>

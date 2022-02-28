@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlq3CYg7Z1ihUD3rBXy38J26YtDXxhkayHw&usqp=CAU);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, orange, purple, aqua);
+            border: 2px solid blueviolet;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 400px;
+            list-style: none;
+        }
+
+        fieldset {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 5px orangered;
+            border-radius: 25px;
+        }
+        .sub.mit {
+           width: 100%;
+            margin-bottom: 20px;
+            height: 20px;
+        }
+        li:hover{
+            border: 2px solid orchid;
+        }
+        h2:hover{
+            border: 2px solid orchid;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2> WELCOME TO FEEDBACK PAGE</h2>
+        <form>
+            <label for="search.box">SEARCH BOX</label>
+            <input type="text" name="search box" id="search.box">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+        <nav>
+            <ul>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <li><a href="./HOME123.html">home</a></li>
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                <li><a href="./SIGN.html">signin</a></li>
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <li><a href="#">feedback</a></li>
+                <i class="fa fa-info" aria-hidden="true"></i>
+                <li><a href="./ABOUT.html">about</a></li>
+            </ul>
+    </header>
+    <main>
+        <fieldset>
+            <legend>
+                FEEDBACK
+            </legend>
+            <textarea placeholder="enter the feedback...."></textarea>
+            <br>
+            <div class="sub.mit">
+            <input type="submit" namme="submit">
+        </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>
